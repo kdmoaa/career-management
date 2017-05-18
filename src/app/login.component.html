@@ -1,0 +1,19 @@
+<div class="container">
+	<h3>Login</h3>
+	<form #userForm="ngForm">
+	<div class="form-group">
+		<label class="control-label" for="id">ID</label>
+		<input type="text" id="userId" class="form-control" placeholder="user ID is..." required [(ngModel)]="model.userId" name="userId" #name="ngModel">
+	</div>
+	<!--<div [hidden]="userId.valid || userId.pristine" class="alert alert-danger">
+                UserID is required.
+                </div>-->
+	<div class="form-group">
+        	<label class="control-label" for="password">PASSWORD</label>
+               	<input type="password" id="password" class="form-control" required [(ngModel)]="model.password" name="password">
+        </div>
+	<div class="form-group">
+               	<input type='text' (click)='login()' value="ログイン" class="btn btn-primary">
+        </div>
+	</form>
+</div>
