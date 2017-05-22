@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
 	<div class="container">
-		<h1>Hello {{name}}</h1>
+		<h1>Career Management Tool</h1>
   		<router-outlet></router-outlet>
 	</div>
   `,
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  { }
