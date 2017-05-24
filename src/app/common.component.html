@@ -1,0 +1,5 @@
+<button md-button [mdMenuTriggerFor]="menu">Menu</button>
+<md-menu #menu="mdMenu" yPosition="above" xPosition="before">
+    <button md-menu-item (click)='listEmployee()'> 社員情報 </button>
+    <button md-menu-item (click)='registerAccounts()'> アカウント登録 </button>
+</md-menu>
